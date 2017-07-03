@@ -1,88 +1,26 @@
-# Project Title
+# Drosophila InSituImages
 
-One Paragraph of project description goes here
+This is for Taly's paper
 
-## Getting Started
+## Matlab Code
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+/scripts/ti/omid/inSitu.m uses /scripts/ti/omid/tiInsitu.m
 
-### Prerequisites
+FriseMSB/TriangulatedImages/Matlab/tf_20100218.mat was used to triangulate the images rather than tf_stage4-6.mat as all other constructs did not contain the field 'p'
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
 
 ```
-Give the example
+ERROR: meshing embryo failed:
+Reference to non-existent field 'p'.
+Skipping!
 ```
 
-And repeat
 
-```
-until finished
-```
+### Results
 
-End with an example of getting some data out of the system or using it for a little demo
+InsituDataFrame.csv is a 311x1007 dataframe with each column corresponding to each image. Images where the software could not generate a mesh from are filled with NaN.
 
-## Running the tests
+/srv/persistent/omid/InsituImages/MeshGen also contains separate .csv and .png files from images. There is a .csv for each image but the software could not generate images from those which could not be converted to mesh.
 
-Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
 
